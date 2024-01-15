@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/assets/styles/style.css">
+    <title>
+        {% block title %}
+        {{ title }}
+        {% endblock %}
+    </title>>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Магазин одежды Flask</h1>
+    </div>
+    <nav class="navigation">
+        <ul class="menu">
+            <li class="nav-item"><a href="/main/" class="nav-link">Главная</a></li>
+            <li class="nav-item"><a href="/clothes/" class="nav-link">Одежда</a></li>
+        </ul>
+    </nav>
+    <div class="block">
+        {% block content %}
+        <img class="block__img" src="/static/assets/imgs/main.png" alt="">
+        {% endblock %}
+    </div>
+    <div class="footer">
+        <hr>
+        <p class="footer__text"><span class="crossed">Ад</span> Подвал пуст, все <span class="crossed">бесы</span>
+            товары здесь</p>
+    </div>
+</body>
+
+</html>

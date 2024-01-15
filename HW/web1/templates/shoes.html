@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+{% block content %}
+    <p>В ассортименте есть картинка ботинок</p>
+    <img class="block__img" src="/static/assets/imgs/boots.png" alt="">
+    <br>
+    <a href="/clothes/jackets/">Перейти в другую категорию</a>
+{% endblock %}
