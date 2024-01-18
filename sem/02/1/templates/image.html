@@ -1,0 +1,7 @@
+{% extends 'first_page.html' %}
+
+{% block ref %}
+<a href="{{ url_for('upload_img') }}">Загрузить другое изображение</a>
+<br>
+<img src="{{ url_for('static', filename='imgs/shirt.png') }}" alt="" height="300px">
+{% endblock %}

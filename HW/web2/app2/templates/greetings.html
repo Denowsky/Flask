@@ -1,0 +1,8 @@
+{% extends 'start_page.html' %}
+{% block content %}
+<form action="/logout">
+    <h1>Привет, {{ name }}!</h1>
+    <h2>Ваша почта: {{ email }}</h2>
+    <input input class="btn btn-primary mt-3 mb-3" type="submit" value="Выйти">
+</form>
+{% endblock %}
