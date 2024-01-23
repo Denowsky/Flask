@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+<form action="/back/">
+    <h1>Привет, {{ name }} {{ surname}}!</h1>
+    <h2>Ваша почта: {{ email }}</h2>
+    <h3>Вы успешно зарегистрировались</h3>
+    <input input class="btn btn-primary mt-3 mb-3" type="submit" value="Выйти">
+</form>
+{% endblock %}
