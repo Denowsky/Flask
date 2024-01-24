@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% block content %}
+<form action="/back/">
+    <h2>Список пользователей</h2>
+    <div class="row">
+        {% for user in user_list %}
+        <p class="col-12 col-md-6">Имя пользователя: {{
+            user.name }}<br>
+            Фамилия пользователя: {{
+            user.surname }}<br>
+            Email пользователя: {{ user.email }}<br>
+            Пароль пользователя: {{ user.password }}</p>
+        {% endfor %}
+    </div>
+    <input input class="btn btn-primary mt-3 mb-3" type="submit" value="Выйти">
+</form>
+{% endblock %}

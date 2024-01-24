@@ -54,6 +54,13 @@ def register():
 def go_back():
     return redirect(url_for('index'))
 
+@app.route('/users/')
+def show_users():
+    users = User.query.all()
+    context = {'user_list': users}
+
+    return render_template('Database.html', **context)
+
 
 if __name__ == '__main__':
     app.run(debug=False)
